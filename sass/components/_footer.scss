@@ -1,0 +1,28 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as m;
+
+footer{
+    padding: 10px;
+    section{
+        text-align: center;
+        color: white;
+        @include m.flex(row, nowrap, space-around, center, 0px);
+        h3{
+            span{
+                font-weight: bold;
+                font-family: "sekuya";
+                background-color: $bgcLiHover;
+                border-radius: 15px;
+                padding: 0px 10px;
+                color: black;
+            }
+        }
+        .redes{
+            a img{
+                height: auto;
+                width: 45px;
+                margin: 0px 15px;
+            }
+        }
+    }
+}

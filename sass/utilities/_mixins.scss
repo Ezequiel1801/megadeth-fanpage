@@ -1,0 +1,20 @@
+@mixin flex ($dir, $wrap, $jc, $ai, $gap){
+    display: flex;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gap;
+}
+
+@mixin tablet{
+    @media (min-width: 481px) and (max-width: 770px){
+        @content;
+    }
+}
+
+@mixin mobile{
+    @media (min-width: 300px) and (max-width: 480px){
+        @content;
+    }
+}
