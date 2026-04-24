@@ -22,6 +22,30 @@ footer{
                 height: auto;
                 width: 45px;
                 margin: 0px 15px;
+                &:hover{
+                    transition: all ease 0.3s;
+                    scale: 1.3;
+                }
+            }
+        }
+    }
+    @include m.tablet{
+        section{
+            @include m.flex(column, nowrap, center, center, 0px);
+            .redes{
+                margin-top: 15px;
+            }
+        }
+    }
+
+    @include m.mobile{
+        section{
+            @include m.flex(column, nowrap, center, center, 0px);
+            .redes{
+                margin-top: 15px;
+                a img{
+                    margin: 0px 5px;
+                }
             }
         }
     }

@@ -1,27 +1,63 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as m;
 
 header {
     padding: 15px;
+
     nav {
-        .container-fluid{
+        .container-fluid {
             a img {
                 height: auto;
                 width: 190px;
             }
+
             gap: 50px;
+
             .collapse {
                 ul {
                     li {
                         a {
                             color: white;
                         }
-                        &:hover{
+
+                        &:hover {
                             background-color: $bgcLiHover;
                             border-radius: 10px;
-                            a{
+                            transition: all ease 0.3s;
+                            scale: 1.2;
+                            a {
                                 color: black;
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    @include m.tablet {
+        nav {
+            .container-fluid {
+                .collapse {
+                    ul {
+                        text-align: center;
+                        @include m.back(20px)
+                    }
+                }
+            }
+        }
+    }
+
+    @include m.mobile {
+        nav {
+            .container-fluid {
+                a img{
+                    width: 140px;
+                }
+                .collapse {
+                    ul {
+                        text-align: center;
+                        @include m.back(20px)
                     }
                 }
             }

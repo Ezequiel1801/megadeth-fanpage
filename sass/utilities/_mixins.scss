@@ -1,4 +1,6 @@
-@mixin flex ($dir, $wrap, $jc, $ai, $gap){
+@use "../utilities/variables" as *;
+
+@mixin flex ($dir, $wrap, $jc, $ai, $gap) {
     display: flex;
     flex-direction: $dir;
     flex-wrap: $wrap;
@@ -7,14 +9,21 @@
     gap: $gap;
 }
 
-@mixin tablet{
-    @media (min-width: 481px) and (max-width: 770px){
+@mixin back($size) {
+    font-size: $size;
+    background-color: $bgcLetras;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@mixin tablet {
+    @media (min-width: 481px) and (max-width: 770px) {
         @content;
     }
 }
 
-@mixin mobile{
-    @media (min-width: 300px) and (max-width: 480px){
+@mixin mobile {
+    @media (min-width: 300px) and (max-width: 480px) {
         @content;
     }
 }
