@@ -7,8 +7,17 @@
   font-family: "ubuntu";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: black;
+  margin-bottom: 20px;
 }
 header nav .container-fluid a img {
   height: auto;
@@ -103,11 +112,226 @@ footer section .redes a img:hover {
     align-items: center;
     gap: 0px;
   }
+  footer section h3 {
+    font-size: 20px;
+  }
   footer section .redes {
     margin-top: 15px;
   }
   footer section .redes a img {
     margin: 0px 5px;
+  }
+}
+
+.mainDisc {
+  color: white;
+  padding: 20px;
+}
+.mainDisc .titleSection h1 {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.mainDisc .titleSection h1 span {
+  font-weight: bolder;
+  font-family: "sekuya";
+  background-color: rgb(255, 255, 79);
+  border-radius: 18px;
+  padding: 0px 10px;
+  color: black;
+}
+.mainDisc .titleSection h2 {
+  font-size: 45px;
+}
+.mainDisc .titleSection p {
+  width: 50%;
+  font-size: 35px;
+}
+.mainDisc .titleSection ul li {
+  padding: 10px 0px;
+  font-size: 25px;
+}
+.mainDisc .titleSection .select {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+.mainDisc .titleSection .select .fakeSelect {
+  position: relative;
+  display: inline-block;
+  border: 1px solid rgb(255, 255, 79);
+  border-radius: 8px;
+  padding: 8px 12px;
+  width: 50%;
+  cursor: pointer;
+  text-align: center;
+}
+.mainDisc .titleSection .select .fakeSelect span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.mainDisc .titleSection .select .fakeSelect .opciones {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.842);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  flex-direction: column;
+}
+.mainDisc .titleSection .select .fakeSelect .opciones a {
+  padding: 8px 12px;
+  text-decoration: none;
+  color: white;
+}
+.mainDisc .titleSection .select .fakeSelect .opciones a:hover {
+  background-color: rgba(0, 0, 0, 0.904);
+}
+.mainDisc .titleSection .select .fakeSelect:hover .opciones {
+  display: flex;
+  width: 100%;
+}
+.mainDisc .cardSection .cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.582);
+  border: solid rgb(255, 255, 79) 2px;
+  border-radius: 15px;
+  margin: 30px 0px;
+}
+.mainDisc .cardSection .cards:hover {
+  box-shadow: 0 4px 25px rgb(255, 255, 79);
+}
+.mainDisc .cardSection .cards img {
+  height: auto;
+  width: 290px;
+}
+.mainDisc .cardSection .cards .cardText h3 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 40px;
+}
+.mainDisc .cardSection .cards .cardText p {
+  font-size: 25px;
+  text-align: center;
+}
+.mainDisc .cardSection .cards .cardText h4 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+.mainDisc .cardSection .cards .cardText ul li {
+  font-size: 20px;
+}
+.mainDisc .cardSection .cards iframe {
+  width: 80%;
+}
+@media (min-width: 481px) and (max-width: 770px) {
+  .mainDisc .titleSection h2 {
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.582);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .mainDisc .titleSection p {
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.582);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+  }
+  .mainDisc .titleSection ul {
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.582);
+    padding: 10px;
+    border-radius: 10px;
+    list-style: none;
+  }
+  .mainDisc .titleSection .select .fakeSelect {
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.582);
+  }
+  .mainDisc .cardSection .cards img {
+    width: 230px;
+  }
+  .mainDisc .cardSection .cards .cardText h3 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+  }
+  .mainDisc .cardSection .cards .cardText p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .mainDisc .cardSection .cards .cardText h4 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .mainDisc .cardSection .cards .cardText ul li {
+    font-size: 18px;
+  }
+}
+@media (min-width: 300px) and (max-width: 480px) {
+  .mainDisc .titleSection h1 {
+    font-size: 30px;
+  }
+  .mainDisc .titleSection h2 {
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.582);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .mainDisc .titleSection p {
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.582);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+  }
+  .mainDisc .titleSection ul {
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.582);
+    padding: 10px;
+    border-radius: 10px;
+    list-style: none;
+  }
+  .mainDisc .titleSection .select .fakeSelect {
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.582);
+  }
+  .mainDisc .cardSection .cards img {
+    width: 180px;
+  }
+  .mainDisc .cardSection .cards .cardText h3 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+  }
+  .mainDisc .cardSection .cards .cardText p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .mainDisc .cardSection .cards .cardText h4 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .mainDisc .cardSection .cards .cardText ul li {
+    font-size: 15px;
+  }
+  .mainDisc .cardSection .cards iframe {
+    width: 100%;
   }
 }
 
@@ -129,18 +353,18 @@ body {
   }
 }
 
-main {
+.mainHome {
   width: 50%;
   padding: 20px;
   color: white;
 }
-main section h1 {
+.mainHome section h1 {
   font-size: 60px;
   text-align: center;
   margin-bottom: 30px;
   font-weight: bold;
 }
-main section h1 span {
+.mainHome section h1 span {
   font-weight: bolder;
   font-family: "sekuya";
   background-color: rgb(255, 255, 79);
@@ -148,53 +372,53 @@ main section h1 span {
   padding: 0px 10px;
   color: black;
 }
-main section p {
+.mainHome section p {
   font-size: 25px;
 }
-main section p span {
+.mainHome section p span {
   font-weight: bolder;
 }
-main section h2 {
+.mainHome section h2 {
   text-align: center;
   font-size: 40px;
   font-weight: bold;
 }
-main section ul {
+.mainHome section ul {
   margin: 15px 0px;
   list-style: none;
   padding: 0;
   text-align: center;
 }
-main section ul li {
+.mainHome section ul li {
   margin: 20px 0px;
   font-size: 25px;
 }
 @media (min-width: 481px) and (max-width: 770px) {
-  main {
+  .mainHome {
     width: 100%;
   }
-  main section h1 {
+  .mainHome section h1 {
     font-size: 45px;
   }
-  main section p {
+  .mainHome section p {
     font-size: 20px;
     background-color: rgba(0, 0, 0, 0.582);
     padding: 10px;
     border-radius: 10px;
   }
-  main section h2 {
+  .mainHome section h2 {
     font-size: 30px;
     background-color: rgba(0, 0, 0, 0.582);
     padding: 10px;
     border-radius: 10px;
   }
-  main section ul {
+  .mainHome section ul {
     margin: 10px;
     list-style: none;
     text-align: center;
     padding: 0;
   }
-  main section ul li {
+  .mainHome section ul li {
     font-size: 20px;
     background-color: rgba(0, 0, 0, 0.582);
     padding: 10px;
@@ -202,31 +426,31 @@ main section ul li {
   }
 }
 @media (min-width: 300px) and (max-width: 480px) {
-  main {
+  .mainHome {
     width: 100%;
   }
-  main section h1 {
+  .mainHome section h1 {
     font-size: 35px;
   }
-  main section p {
+  .mainHome section p {
     font-size: 15px;
     background-color: rgba(0, 0, 0, 0.582);
     padding: 10px;
     border-radius: 10px;
   }
-  main section h2 {
+  .mainHome section h2 {
     font-size: 25px;
     background-color: rgba(0, 0, 0, 0.582);
     padding: 10px;
     border-radius: 10px;
   }
-  main section ul {
+  .mainHome section ul {
     margin: 10px;
     list-style: none;
     padding: 0;
     text-align: center;
   }
-  main section ul li {
+  .mainHome section ul li {
     font-size: 20px;
     background-color: rgba(0, 0, 0, 0.582);
     padding: 10px;

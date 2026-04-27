@@ -41,6 +41,9 @@ footer{
     @include m.mobile{
         section{
             @include m.flex(column, nowrap, center, center, 0px);
+            h3{
+                font-size: 20px;
+            }
             .redes{
                 margin-top: 15px;
                 a img{

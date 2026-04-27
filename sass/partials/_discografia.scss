@@ -1,0 +1,252 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as m;
+
+.mainDisc {
+    color: white;
+    padding: 20px;
+
+    .titleSection {
+        h1 {
+            @include m.title();
+
+            span {
+                @include m.spanTitle();
+            }
+        }
+
+        h2 {
+            font-size: 45px;
+        }
+
+        p {
+            width: 50%;
+            font-size: 35px;
+        }
+
+        ul {
+            li {
+                padding: 10px 0px;
+                font-size: 25px;
+            }
+        }
+
+        .select {
+            @include m.flex(column, nowrap, center, center, 0px);
+
+            .fakeSelect {
+                position: relative;
+                display: inline-block;
+                border: 1px solid $bgcLiHover;
+                border-radius: 8px;
+                padding: 8px 12px;
+                width: 50%;
+                cursor: pointer;
+                text-align: center;
+
+                span {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+
+                .opciones {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background-color: rgba(0, 0, 0, 0.842);
+                    border: 1px solid #ccc;
+                    border-radius: 8px;
+                    flex-direction: column;
+
+                    a {
+                        padding: 8px 12px;
+                        text-decoration: none;
+                        color: white;
+
+                        &:hover {
+                            background-color: rgba(0, 0, 0, 0.904);
+                        }
+                    }
+                }
+
+                &:hover .opciones {
+                    display: flex;
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+    .cardSection {
+        .cards {
+            @include m.flex(column, nowrap, center, center, 0px);
+            padding: 20px;
+            background-color: $bgcLetras;
+            border: solid $bgcLiHover 2px;
+            border-radius: 15px;
+            margin: 30px 0px;
+
+            &:hover {
+                box-shadow: 0 4px 25px $bgcLiHover;
+            }
+
+            img {
+                height: auto;
+                width: 290px;
+            }
+
+            .cardText {
+                h3 {
+                    text-align: center;
+                    font-weight: bolder;
+                    font-size: 40px;
+                }
+
+                p {
+                    font-size: 25px;
+                    text-align: center;
+                }
+
+                h4 {
+                    font-size: 30px;
+                    text-align: center;
+                    font-weight: bold;
+                }
+
+                ul {
+                    li {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            iframe {
+                width: 80%;
+            }
+        }
+    }
+
+    @include m.tablet {
+        .titleSection {
+            h2 {
+                @include m.back(30px);
+            }
+
+            p {
+                @include m.back(20px);
+                width: 100%;
+            }
+
+            ul {
+                @include m.back(25px);
+                list-style: none;
+            }
+
+            .select {
+                .fakeSelect {
+                    width: 70%;
+                    background-color: $bgcLetras;
+                }
+            }
+        }
+
+        .cardSection {
+            .cards {
+                img {
+                    width: 230px;
+                }
+
+                .cardText {
+                    h3 {
+                        text-align: center;
+                        font-weight: bolder;
+                        font-size: 30px;
+                    }
+
+                    p {
+                        font-size: 20px;
+                        text-align: center;
+                    }
+
+                    h4 {
+                        font-size: 25px;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+
+                    ul {
+                        li {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include m.mobile {
+        .titleSection {
+            h1{
+                font-size: 30px;
+            }
+
+            h2 {
+                @include m.back(25px);
+            }
+
+            p {
+                @include m.back(20px);
+                width: 100%;
+            }
+
+            ul {
+                @include m.back(15px);
+                list-style: none;
+            }
+
+            .select {
+                .fakeSelect {
+                    width: 70%;
+                    background-color: $bgcLetras;
+                }
+            }
+        }
+
+        .cardSection {
+            .cards {
+                img {
+                    width: 180px;
+                }
+
+                .cardText {
+                    h3 {
+                        text-align: center;
+                        font-weight: bolder;
+                        font-size: 25px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        text-align: center;
+                    }
+
+                    h4 {
+                        font-size: 20px;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+
+                    ul {
+                        li {
+                            font-size: 15px;
+                        }
+                    }
+                }
+                iframe{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

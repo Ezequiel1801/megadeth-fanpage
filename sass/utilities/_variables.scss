@@ -8,5 +8,9 @@
     font-family: "ubuntu";
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 $bgcLiHover: rgb(255, 255, 79);
 $bgcLetras: rgba(0, 0, 0, 0.582);
