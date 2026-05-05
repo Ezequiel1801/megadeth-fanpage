@@ -1,5 +1,6 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as m;
+@use "../utilities/animaciones" as a;
 
 .mainDisc {
     color: white;
@@ -80,12 +81,17 @@
 
     .cardSection {
         .cards {
-            @include m.flex(column, nowrap, center, center, 0px);
             padding: 20px;
             background-color: $bgcLetras;
             border: solid $bgcLiHover 2px;
             border-radius: 15px;
             margin: 30px 0px;
+            display: none;
+
+            &:target{
+                @include m.flex(column, nowrap, center, center, 0px);
+                animation: fadeIn 1s ease;
+            }
 
             &:hover {
                 box-shadow: 0 4px 25px $bgcLiHover;
@@ -125,6 +131,11 @@
                 width: 80%;
             }
         }
+    }
+
+    @keyframes fadeIn{
+        from{opacity: 0; transform: translateY(10px);}
+        to{opacity: 1; transform:translateY(0) ;}
     }
 
     @include m.tablet {

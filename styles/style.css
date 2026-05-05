@@ -197,17 +197,21 @@ footer section .redes a img:hover {
   width: 100%;
 }
 .mainDisc .cardSection .cards {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.582);
+  border: solid rgb(255, 255, 79) 2px;
+  border-radius: 15px;
+  margin: 30px 0px;
+  display: none;
+}
+.mainDisc .cardSection .cards:target {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   gap: 0px;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.582);
-  border: solid rgb(255, 255, 79) 2px;
-  border-radius: 15px;
-  margin: 30px 0px;
+  animation: fadeIn 1s ease;
 }
 .mainDisc .cardSection .cards:hover {
   box-shadow: 0 4px 25px rgb(255, 255, 79);
@@ -235,6 +239,16 @@ footer section .redes a img:hover {
 }
 .mainDisc .cardSection .cards iframe {
   width: 80%;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @media (min-width: 481px) and (max-width: 770px) {
   .mainDisc .titleSection h2 {
