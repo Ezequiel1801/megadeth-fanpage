@@ -1,0 +1,67 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as m;
+
+.mainHistoria{
+    color: white;
+    padding: 20px;
+    .introduccion{
+        text-align: center;
+        h1{
+            @include m.title();
+            span{
+                @include m.spanTitle();
+            }
+        }
+        h2{
+            @include m.back(45px);
+            border: 1px solid $bgcLiHover;
+        }
+        p{
+            @include m.back(30px);
+            border: 1px solid $bgcLiHover;
+        }
+    }
+
+    .cards-historia{
+        @include m.back(20px);
+        border: 1px solid $bgcLiHover;
+        margin-bottom: 25px;
+        h3{
+            text-align: center;
+            font-size: 45px;
+            margin: 20px;
+        }
+        .text-img{
+            @include m.flex(row, nowrap, center, center, 30px);
+            p{
+                font-size: 35px;
+                margin-left: 15px;
+
+            }
+            .inicios{
+                margin: 0px 20px 20px 0px;
+                border-radius: 10px;
+            }
+            .dorada{
+                margin: 0px 20px 20px 0px;
+                border-radius: 10px;
+                width: 500px;
+            }
+            .oscura{
+                margin: 0px 20px 20px 0px;
+                border-radius: 10px;
+                width: 450px;
+            }
+            .actual{
+                margin: 0px 20px 20px 0px;
+                border-radius: 10px;
+                width: 600px;
+            }
+        }
+    }
+    .legado{
+        text-align: center;
+        @include m.back(30px);
+        border: 1px solid $bgcLiHover;
+    }
+}

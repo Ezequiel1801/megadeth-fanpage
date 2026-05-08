@@ -349,6 +349,94 @@ footer section .redes a img:hover {
   }
 }
 
+.mainHistoria {
+  color: white;
+  padding: 20px;
+}
+.mainHistoria .introduccion {
+  text-align: center;
+}
+.mainHistoria .introduccion h1 {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.mainHistoria .introduccion h1 span {
+  font-weight: bolder;
+  font-family: "sekuya";
+  background-color: rgb(255, 255, 79);
+  border-radius: 18px;
+  padding: 0px 10px;
+  color: black;
+}
+.mainHistoria .introduccion h2 {
+  font-size: 45px;
+  background-color: rgba(0, 0, 0, 0.582);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 79);
+}
+.mainHistoria .introduccion p {
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.582);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 79);
+}
+.mainHistoria .cards-historia {
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.582);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 79);
+  margin-bottom: 25px;
+}
+.mainHistoria .cards-historia h3 {
+  text-align: center;
+  font-size: 45px;
+  margin: 20px;
+}
+.mainHistoria .cards-historia .text-img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.mainHistoria .cards-historia .text-img p {
+  font-size: 35px;
+  margin-left: 15px;
+}
+.mainHistoria .cards-historia .text-img .inicios {
+  margin: 0px 20px 20px 0px;
+  border-radius: 10px;
+}
+.mainHistoria .cards-historia .text-img .dorada {
+  margin: 0px 20px 20px 0px;
+  border-radius: 10px;
+  width: 500px;
+}
+.mainHistoria .cards-historia .text-img .oscura {
+  margin: 0px 20px 20px 0px;
+  border-radius: 10px;
+  width: 450px;
+}
+.mainHistoria .cards-historia .text-img .actual {
+  margin: 0px 20px 20px 0px;
+  border-radius: 10px;
+  width: 600px;
+}
+.mainHistoria .legado {
+  text-align: center;
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.582);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 79);
+}
+
 body {
   background-image: url(../assets/fondo.jpg);
   background-size: cover;
