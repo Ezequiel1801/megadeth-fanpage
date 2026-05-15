@@ -14,6 +14,7 @@
     background-color: $bgcLetras;
     padding: 10px;
     border-radius: 10px;
+    border: 1px solid $bgcLiHover;
 }
 
 @mixin title() {
@@ -21,6 +22,14 @@
     text-align: center;
     margin-bottom: 30px;
     font-weight: bold;
+}
+
+@mixin imgHistoria(){
+    margin: 0px 20px;
+    border-radius: 10px;
+    height: auto;
+    width: 70%;
+    object-fit: cover;
 }
 
 @mixin spanTitle() {

@@ -45,7 +45,6 @@ header {
                 .collapse {
                     ul {
                         text-align: center;
-                        @include m.back(20px)
                     }
                 }
             }
@@ -61,7 +60,6 @@ header {
                 .collapse {
                     ul {
                         text-align: center;
-                        @include m.back(20px)
                     }
                 }
             }

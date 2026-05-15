@@ -1,0 +1,111 @@
+@use "../utilities/mixins" as m;
+@use "../utilities/variables" as *;
+
+.mainIntegr {
+    color: white;
+    margin-bottom: 30px;
+    .bienvenida {
+        h1 {
+            @include m.title();
+            span {
+                @include m.spanTitle();
+            }
+        }
+
+        h2,h3 {
+            @include m.back(35px);
+            margin: 30px 20px;
+            text-align: center
+        }
+
+        p {
+            @include m.back(30px);
+            margin: 30px 20px;
+            text-align: center
+        }
+    }
+
+    .integrantes {
+        @include m.flex(column, nowrap, center, center, 0px);
+
+        h3 {
+            font-size: 35px;
+            margin: 25px 0px;
+            @include m.spanTitle();
+        }
+
+        .card {
+            @include m.back(20px);
+            @include m.flex(column, nowrap, center, center, 0px);
+            text-align: center;
+            width: 100%;
+            max-width: 450px;
+            overflow: hidden;
+
+            &:hover {
+                box-shadow: 0 4px 25px $bgcLiHover;
+            }
+
+            img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+
+            .card-body {
+                margin-top: 20px;
+            }
+        }
+
+        .guitarristas, .bajistas, .bateristas{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 450px));
+            gap: 30px;
+            justify-content: center;
+            justify-items: center;
+        }
+    }
+
+    // RESPONSIVE TABLET
+    @include m.tablet{
+        .bienvenida{
+            h2,h3 {
+                font-size: 25px;
+                margin: 30px 10px;
+            }
+            p {
+                @include m.back(20px);
+                margin: 30px 10px;
+            }
+        }
+    }
+
+    // RESPONSIVE MOBILE
+    @include m.mobile{
+        .bienvenida{
+            h1{
+                font-size: 35px;
+            }
+            h2,h3 {
+                font-size: 20px;
+                margin: 25px 5px;
+            }
+            p {
+                @include m.back(18px);
+                margin: 25px 5px;
+            }
+        }
+
+        .integrantes{
+            h3{
+                font-size: 28px;
+            }
+
+            .card{
+                max-width: 300px;
+            }
+        }
+    }
+}
