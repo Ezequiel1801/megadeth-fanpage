@@ -60,11 +60,7 @@
 
         .guitarristas, .bajistas, .bateristas{
             width: 100%;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 450px));
-            gap: 30px;
-            justify-content: center;
-            justify-items: center;
+            @include m.flex(row, wrap, center, center, 30px);
         }
     }
 

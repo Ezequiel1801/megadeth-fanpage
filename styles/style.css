@@ -115,6 +115,152 @@ footer section .redes a img:hover {
   }
 }
 
+.mainContacto {
+  color: white;
+}
+.mainContacto .bienvenidaCont h1 {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.mainContacto .bienvenidaCont h2 {
+  font-size: 40px;
+  background-color: rgba(0, 0, 0, 0.582);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 79);
+  margin: 25px;
+}
+.mainContacto .bienvenidaCont h2:hover {
+  box-shadow: 0 4px 25px rgb(255, 255, 79);
+}
+.mainContacto .bienvenidaCont h3 {
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.582);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 79);
+  margin: 25px;
+}
+.mainContacto .bienvenidaCont h3:hover {
+  box-shadow: 0 4px 25px rgb(255, 255, 79);
+}
+.mainContacto .form {
+  width: 100%;
+}
+.mainContacto .form form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.mainContacto .form form label {
+  font-size: 28px;
+  font-weight: bolder;
+}
+.mainContacto .form form input {
+  text-align: center;
+  width: 50%;
+  margin-bottom: 25px;
+  padding: 5px;
+  border-radius: 7px;
+  border: 1px solid rgb(255, 255, 79);
+  background-color: rgba(0, 0, 0, 0.582);
+  color: white;
+}
+.mainContacto .form form input:hover {
+  box-shadow: 0 4px 25px rgb(255, 255, 79);
+}
+.mainContacto .form form textarea {
+  width: 50%;
+  height: 100px;
+  margin-bottom: 25px;
+  padding: 7px;
+  border-radius: 7px;
+  border: 1px solid rgb(255, 255, 79);
+  background-color: rgba(0, 0, 0, 0.582);
+  color: white;
+}
+.mainContacto .form form textarea:hover {
+  box-shadow: 0 4px 25px rgb(255, 255, 79);
+}
+.mainContacto .form form .btns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 50%;
+}
+@media (min-width: 481px) and (max-width: 770px) {
+  .mainContacto .bienvenidaCont h1 {
+    font-size: 45px;
+  }
+  .mainContacto .bienvenidaCont h2 {
+    font-size: 30px;
+    margin: 10px;
+  }
+  .mainContacto .bienvenidaCont h3 {
+    font-size: 20px;
+    margin: 10px 10px 30px 10px;
+  }
+  .mainContacto .form form label {
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.582);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 79);
+    padding: 3px 10px;
+    margin-bottom: 5px;
+  }
+  .mainContacto .form form input {
+    width: 70%;
+    margin-bottom: 30px;
+  }
+  .mainContacto .form form textarea {
+    width: 70%;
+  }
+  .mainContacto .form form .btns {
+    width: 70%;
+  }
+}
+@media (min-width: 300px) and (max-width: 480px) {
+  .mainContacto .bienvenidaCont h1 {
+    font-size: 25px;
+  }
+  .mainContacto .bienvenidaCont h2 {
+    font-size: 20px;
+    margin: 5px;
+  }
+  .mainContacto .bienvenidaCont h3 {
+    font-size: 18px;
+    margin: 5px 5px 20px 5px;
+  }
+  .mainContacto .form form label {
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.582);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 79);
+    padding: 3px 10px;
+    margin-bottom: 5px;
+  }
+  .mainContacto .form form input {
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  .mainContacto .form form textarea {
+    width: 95%;
+  }
+  .mainContacto .form form .btns {
+    width: 95%;
+  }
+}
+
 .mainDisc {
   color: white;
   padding: 20px;
@@ -243,6 +389,9 @@ footer section .redes a img:hover {
   }
 }
 @media (min-width: 481px) and (max-width: 770px) {
+  .mainDisc .titleSection h1 {
+    font-size: 45px;
+  }
   .mainDisc .titleSection h2 {
     font-size: 30px;
     background-color: rgba(0, 0, 0, 0.582);
@@ -376,12 +525,18 @@ footer section .redes a img:hover {
   border: 1px solid rgb(255, 255, 79);
   margin: 20px 0px;
 }
+.mainHistoria .introduccion h2:hover {
+  box-shadow: 0 4px 25px rgb(255, 255, 79);
+}
 .mainHistoria .introduccion p {
   font-size: 30px;
   background-color: rgba(0, 0, 0, 0.582);
   padding: 10px;
   border-radius: 10px;
   border: 1px solid rgb(255, 255, 79);
+}
+.mainHistoria .introduccion p:hover {
+  box-shadow: 0 4px 25px rgb(255, 255, 79);
 }
 .mainHistoria .cards-historia {
   font-size: 20px;
@@ -390,6 +545,9 @@ footer section .redes a img:hover {
   border-radius: 10px;
   border: 1px solid rgb(255, 255, 79);
   margin-bottom: 25px;
+}
+.mainHistoria .cards-historia:hover {
+  box-shadow: 0 4px 25px rgb(255, 255, 79);
 }
 .mainHistoria .cards-historia h3 {
   text-align: center;
@@ -426,6 +584,9 @@ footer section .redes a img:hover {
   padding: 10px;
   border-radius: 10px;
   border: 1px solid rgb(255, 255, 79);
+}
+.mainHistoria .legado:hover {
+  box-shadow: 0 4px 25px rgb(255, 255, 79);
 }
 @media (min-width: 481px) and (max-width: 770px) {
   .mainHistoria .introduccion {
@@ -728,11 +889,12 @@ body {
 }
 .mainIntegr .integrantes .guitarristas, .mainIntegr .integrantes .bajistas, .mainIntegr .integrantes .bateristas {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 450px));
-  gap: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  justify-items: center;
+  align-items: center;
+  gap: 30px;
 }
 @media (min-width: 481px) and (max-width: 770px) {
   .mainIntegr .bienvenida h2, .mainIntegr .bienvenida h3 {

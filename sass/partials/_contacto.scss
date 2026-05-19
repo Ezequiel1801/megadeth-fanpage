@@ -1,0 +1,140 @@
+@use "../utilities/mixins" as m;
+@use "../utilities/variables" as *;
+
+.mainContacto{
+    color: white;
+    .bienvenidaCont{
+        h1{
+            @include m.title();
+        }
+        h2{
+            @include m.back(40px);
+            margin: 25px;
+            &:hover {
+                box-shadow: 0 4px 25px $bgcLiHover;
+            }
+        }
+        h3{
+            @include m.back(25px);
+            margin: 25px;
+            &:hover {
+                box-shadow: 0 4px 25px $bgcLiHover;
+            }
+        }
+    }
+
+    .form{
+        width: 100%;
+        form{
+            @include m.flex(column, nowrap, center, center, 5px);
+            label{
+                font-size: 28px;
+                font-weight: bolder;
+            }
+            input{
+                text-align: center;
+                width: 50%;
+                margin-bottom: 25px;
+                padding: 5px;
+                border-radius: 7px;
+                border: 1px solid $bgcLiHover;
+                background-color: $bgcLetras;
+                color: white;
+                &:hover {
+                    box-shadow: 0 4px 25px $bgcLiHover;
+                }
+            }
+            textarea{
+                width: 50%;
+                height: 100px;
+                margin-bottom: 25px;
+                padding: 7px;
+                border-radius: 7px;
+                border: 1px solid $bgcLiHover;
+                background-color: $bgcLetras;
+                color: white;
+                &:hover {
+                    box-shadow: 0 4px 25px $bgcLiHover;
+                }
+            }
+            .btns{
+                @include m.flex(row, nowrap, center, center, 20px);
+                width: 50%;
+            }
+        }
+    }
+
+    //RESPONSIVE TABLET
+    @include m.tablet{
+        .bienvenidaCont{
+            h1{
+                font-size: 45px;
+            }
+            h2{
+                font-size: 30px;
+                margin: 10px;
+            }
+            h3{
+                font-size: 20px;
+                margin: 10px 10px 30px 10px;
+            }
+        }
+
+        .form{
+            form{
+                label{
+                    @include m.back(25px);
+                    padding: 3px 10px;
+                    margin-bottom: 5px;
+                }
+                input{
+                    width: 70%;
+                    margin-bottom: 30px;
+                }
+                textarea{
+                    width: 70%;
+                }
+                .btns{
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    //RESPONSIVE MOBILE
+    @include m.mobile{
+        .bienvenidaCont{
+            h1{
+                font-size: 25px;
+            }
+            h2{
+                font-size: 20px;
+                margin: 5px;
+            }
+            h3{
+                font-size: 18px;
+                margin: 5px 5px 20px 5px;
+            }
+        }
+
+        .form{
+            form{
+                label{
+                    @include m.back(20px);
+                    padding: 3px 10px;
+                    margin-bottom: 5px;
+                }
+                input{
+                    width: 95%;
+                    margin-bottom: 20px;
+                }
+                textarea{
+                    width: 95%;
+                }
+                .btns{
+                    width: 95%;
+                }
+            }
+        }
+    }
+}

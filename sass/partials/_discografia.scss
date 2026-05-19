@@ -138,8 +138,13 @@
         to{opacity: 1; transform:translateY(0) ;}
     }
 
+    //RESPONSIVE TABLET
     @include m.tablet {
         .titleSection {
+            h1{
+                font-size: 45px;
+            }
+
             h2 {
                 @include m.back(30px);
             }
@@ -196,6 +201,7 @@
         }
     }
 
+    //RESPONSIVE MOBILE
     @include m.mobile {
         .titleSection {
             h1{

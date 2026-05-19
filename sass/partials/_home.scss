@@ -53,6 +53,8 @@ body {
             }
         }
     }
+
+    //RESPONSIVE TABLET
     @include m.tablet{
         width: 100%;
         section{
@@ -78,6 +80,8 @@ body {
             }
         }
     }
+
+    //RESPONSIVE MOBILE
     @include m.mobile{
         width: 100%;
         section{
