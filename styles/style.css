@@ -499,6 +499,7 @@ footer section .redes a img:hover {
 .mainHistoria {
   color: white;
   padding: 20px;
+  overflow-x: hidden;
 }
 .mainHistoria .introduccion {
   text-align: center;
@@ -807,6 +808,7 @@ body {
 .mainIntegr {
   color: white;
   margin-bottom: 30px;
+  overflow-x: hidden;
 }
 .mainIntegr .bienvenida h1 {
   font-size: 60px;

@@ -4,6 +4,7 @@
 .mainIntegr {
     color: white;
     margin-bottom: 30px;
+    overflow-x: hidden;
     .bienvenida {
         h1 {
             @include m.title();
